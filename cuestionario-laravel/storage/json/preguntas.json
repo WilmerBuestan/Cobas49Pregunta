@@ -1,0 +1,249 @@
+[
+    {
+        "pregunta": "¿Cuáles son los tres ejes fundamentales en las instituciones?",
+        "opciones": ["Personas, bienes y documentos", "Personas, economía y tecnología", "Bienes, capital y recursos", "Documentos, finanzas y planificación"],
+        "respuesta": "Personas, bienes y documentos"
+    },
+    {
+        "pregunta": "¿Qué elemento de las instituciones requiere control interno de administración?",
+        "opciones": ["Personas", "Bienes", "Documentos", "Estrategias"],
+        "respuesta": "Bienes"
+    },
+    {
+        "pregunta": "¿Qué produce la gestión de los tres ejes fundamentales en las instituciones?",
+        "opciones": ["Registros", "Documentos", "Nómina", "Reducción de costos"],
+        "respuesta": "Registros"
+    },
+    {
+        "pregunta": "¿Cómo se define el capital humano?",
+        "opciones": ["Un gasto empresarial", "Un conjunto de competencias y capacidades", "Un recurso financiero", "Un bien tangible"],
+        "respuesta": "Un conjunto de competencias y capacidades"
+    },
+    {
+        "pregunta": "¿Cuál fue el enfoque de las relaciones industriales en 1900?",
+        "opciones": ["Gestionar nóminas", "Mediar entre capital y trabajo", "Capacitar empleados", "Implementar estrategias tecnológicas"],
+        "respuesta": "Mediar entre capital y trabajo"
+    },
+    {
+        "pregunta": "¿Cuál era la función principal de la administración de personal en 1950?",
+        "opciones": ["Gestionar nóminas y cumplir leyes", "Implementar liderazgo estratégico", "Promover la cultura organizacional", "Motivar a los empleados"],
+        "respuesta": "Gestionar nóminas y cumplir leyes"
+    },
+    {
+        "pregunta": "¿En qué década se empezó a ver a las personas como activos clave en la empresa?",
+        "opciones": ["1900", "1950", "1960", "2000"],
+        "respuesta": "1960"
+    },
+    {
+        "pregunta": "¿Qué caracteriza a la gestión del talento en los años 2000?",
+        "opciones": ["Innovación y compromiso", "Enfoque en leyes laborales", "Medición de costos", "Reducción de personal"],
+        "respuesta": "Innovación y compromiso"
+    },
+    {
+        "pregunta": "¿Cuál es el enfoque actual de la administración de recursos humanos?",
+        "opciones": ["Gestión del talento", "Administración de nóminas", "Relaciones industriales", "Administración con las personas"],
+        "respuesta": "Administración con las personas"
+    },
+    {
+        "pregunta": "¿Cuál de las siguientes es una dimensión de la administración de RRHH?",
+        "opciones": ["Dimensión estratégica", "Dimensión creativa", "Dimensión artística", "Dimensión emocional"],
+        "respuesta": "Dimensión estratégica"
+    },
+    {
+        "pregunta": "¿Qué subsistema de RRHH se encarga del reclutamiento y selección?",
+        "opciones": ["Subsistema de provisión", "Subsistema de retención", "Subsistema de auditoría", "Subsistema de formación"],
+        "respuesta": "Subsistema de provisión"
+    },
+    {
+        "pregunta": "¿Cuál es un objetivo organizacional de la administración de RRHH?",
+        "opciones": ["Alinear RRHH con la estrategia empresarial", "Reducir costos de nómina", "Maximizar la supervisión", "Evitar conflictos laborales"],
+        "respuesta": "Alinear RRHH con la estrategia empresarial"
+    },
+    {
+        "pregunta": "¿Qué política de RRHH busca atraer y retener talento?",
+        "opciones": ["Provisión de personal", "Desarrollo de personal", "Retención de personal", "Auditoría de RRHH"],
+        "respuesta": "Provisión de personal"
+    },
+    {
+        "pregunta": "¿Qué estrategia de retención de personal fomenta la igualdad de género?",
+        "opciones": ["Inclusión laboral", "Eliminación de beneficios", "Trabajo sin incentivos", "Disminución de capacitaciones"],
+        "respuesta": "Inclusión laboral"
+    },
+    {
+        "pregunta": "¿Qué implica la política de desarrollo de personal?",
+        "opciones": ["Capacitación y aprendizaje continuo", "Menos oportunidades de crecimiento", "Aumento de supervisión", "Mayor carga laboral"],
+        "respuesta": "Capacitación y aprendizaje continuo"
+    },
+    {
+        "pregunta": "¿Cuál es la función de la auditoría de RRHH?",
+        "opciones": ["Evaluar políticas y prácticas", "Eliminar evaluaciones", "Reducir el personal", "Evitar nuevas contrataciones"],
+        "respuesta": "Evaluar políticas y prácticas"
+    },
+    {
+        "pregunta": "¿Cuál de los siguientes es un pilar de la ética laboral en RRHH?",
+        "opciones": ["Honestidad", "Desigualdad", "Discriminación", "Falta de comunicación"],
+        "respuesta": "Honestidad"
+    },
+    {
+        "pregunta": "¿Qué desafío implica la transformación digital en RRHH?",
+        "opciones": ["Adaptar procesos a la tecnología", "Eliminar el uso de herramientas digitales", "Evitar capacitaciones", "Reducir la digitalización"],
+        "respuesta": "Adaptar procesos a la tecnología"
+    },
+    
+        {
+            "pregunta": "¿Qué principio de RRHH se relaciona con tratar a todos con equidad?",
+            "opciones": ["Integridad", "Colaboración", "Respeto humano", "Equidad y justicia"],
+            "respuesta": "Equidad y justicia"
+        },
+        {
+            "pregunta": "¿Qué principio de RRHH se basa en la comunicación efectiva?",
+            "opciones": ["Motivación", "Innovación", "Comunicación abierta", "Flexibilidad"],
+            "respuesta": "Comunicación abierta"
+        },
+        {
+            "pregunta": "¿Cómo se fomenta la innovación en RRHH?",
+            "opciones": ["Generando nuevas ideas y soluciones", "Evitando cambios", "Eliminando la creatividad", "Reduciendo la capacitación"],
+            "respuesta": "Generando nuevas ideas y soluciones"
+        },
+        {
+            "pregunta": "¿Por qué es importante la flexibilidad en RRHH?",
+            "opciones": ["Para adaptarse a cambios", "Para evitar disciplina", "Para reducir la carga de trabajo", "Para eliminar normas"],
+            "respuesta": "Para adaptarse a cambios"
+        },
+        {
+            "pregunta": "¿Cuál es un desafío actual en RRHH?",
+            "opciones": ["Adaptación a modelos híbridos de trabajo", "Eliminar beneficios", "Reducir la comunicación", "Evitar la transformación digital"],
+            "respuesta": "Adaptación a modelos híbridos de trabajo"
+        },
+        {
+            "pregunta": "¿Qué política de RRHH busca mejorar la cultura organizacional?",
+            "opciones": ["Organización de personal", "Retención de personal", "Provisión de personal", "Auditoría de RRHH"],
+            "respuesta": "Organización de personal"
+        },
+        {
+            "pregunta": "¿Cuál es una práctica clave en la política de disciplina?",
+            "opciones": ["Evaluaciones justas", "Descuentos salariales", "Castigos estrictos", "Falta de supervisión"],
+            "respuesta": "Evaluaciones justas"
+        },
+        {
+            "pregunta": "¿Qué busca la política de compensación y beneficios?",
+            "opciones": ["Reconocer el esfuerzo del trabajador", "Reducir costos", "Eliminar incentivos", "No ofrecer aumentos"],
+            "respuesta": "Reconocer el esfuerzo del trabajador"
+        },
+        {
+            "pregunta": "¿Cuál es un componente de la salud integral en RRHH?",
+            "opciones": ["Bienestar físico y mental", "Aumento de carga laboral", "Eliminación de descansos", "Mayor supervisión"],
+            "respuesta": "Bienestar físico y mental"
+        },
+        {
+            "pregunta": "¿Qué política fomenta el aprendizaje continuo?",
+            "opciones": ["Desarrollo de personal", "Retención de personal", "Provisión de personal", "Auditoría de RRHH"],
+            "respuesta": "Desarrollo de personal"
+        },
+    
+    
+        
+            {
+                "pregunta": "¿Qué principio de RRHH implica actuar con honestidad y ética?",
+                "opciones": ["Integridad", "Motivación", "Flexibilidad", "Innovación"],
+                "respuesta": "Integridad"
+            },
+            {
+                "pregunta": "¿Cuál es el objetivo de la política de igualdad de género en RRHH?",
+                "opciones": ["Garantizar equidad en el trabajo", "Favorecer solo a un género", "Reducir oportunidades", "Evitar la inclusión"],
+                "respuesta": "Garantizar equidad en el trabajo"
+            },
+            {
+                "pregunta": "¿Qué elemento es clave en la cultura organizacional?",
+                "opciones": ["Valores y creencias compartidas", "Control total del empleado", "Eliminar comunicación", "Reducir el bienestar"],
+                "respuesta": "Valores y creencias compartidas"
+            },
+            {
+                "pregunta": "¿Qué se busca con la política de reconocimiento y recompensas?",
+                "opciones": ["Motivar el desempeño", "Reducir salarios", "Eliminar beneficios", "Aumentar la carga laboral"],
+                "respuesta": "Motivar el desempeño"
+            },
+            {
+                "pregunta": "¿Cómo se define la auditoría de RRHH?",
+                "opciones": ["Evaluación de políticas y prácticas", "Eliminación de procesos", "Reducción de empleados", "Evitar revisiones"],
+                "respuesta": "Evaluación de políticas y prácticas"
+            },
+            {
+                "pregunta": "¿Qué aspecto cubre la seguridad y salud ocupacional en RRHH?",
+                "opciones": ["Bienestar físico y mental", "Mayor carga de trabajo", "Menos supervisión", "Eliminación de descansos"],
+                "respuesta": "Bienestar físico y mental"
+            },
+            {
+                "pregunta": "¿Cuál es una estrategia clave en la gestión del talento?",
+                "opciones": ["Capacitación constante", "Evitar la formación", "Reducir oportunidades", "Eliminar incentivos"],
+                "respuesta": "Capacitación constante"
+            },
+            {
+                "pregunta": "¿Cuál de los siguientes es un reto actual en RRHH?",
+                "opciones": ["Diversidad e inclusión", "Evitar el crecimiento", "Aumentar las jerarquías", "Eliminar evaluaciones"],
+                "respuesta": "Diversidad e inclusión"
+            },
+            {
+                "pregunta": "¿Qué busca la política de retención de personal?",
+                "opciones": ["Fidelizar talento y evitar rotación", "Reducir beneficios", "Evitar la diversidad", "Eliminar la capacitación"],
+                "respuesta": "Fidelizar talento y evitar rotación"
+            },
+            {
+                "pregunta": "¿Qué se busca con la gestión del cambio en RRHH?",
+                "opciones": ["Adaptarse a nuevas tendencias", "Evitar la transformación", "Resistir el aprendizaje", "Eliminar la innovación"],
+                "respuesta": "Adaptarse a nuevas tendencias"
+            },
+        
+            
+                {
+                    "pregunta": "¿Cuál es el objetivo de la política de aprendizaje continuo?",
+                    "opciones": ["Desarrollar habilidades constantemente", "Reducir el acceso a información", "Evitar la capacitación", "Limitar el crecimiento profesional"],
+                    "respuesta": "Desarrollar habilidades constantemente"
+                },
+                {
+                    "pregunta": "¿Qué estrategia permite mantener la motivación del personal?",
+                    "opciones": ["Reconocimiento y recompensas", "Aumento de carga laboral", "Falta de comunicación", "Eliminación de incentivos"],
+                    "respuesta": "Reconocimiento y recompensas"
+                },
+                {
+                    "pregunta": "¿Cómo se define el liderazgo en RRHH?",
+                    "opciones": ["Capacidad de influir en otros positivamente", "Ejercer control absoluto", "Evitar la comunicación", "Ignorar las necesidades del equipo"],
+                    "respuesta": "Capacidad de influir en otros positivamente"
+                },
+                {
+                    "pregunta": "¿Qué impacto tiene el clima organizacional en la empresa?",
+                    "opciones": ["Afecta el rendimiento y bienestar", "No tiene ningún impacto", "Solo influye en la dirección", "Solo afecta a los nuevos empleados"],
+                    "respuesta": "Afecta el rendimiento y bienestar"
+                },
+                {
+                    "pregunta": "¿Cuál es un elemento clave en la cultura organizacional?",
+                    "opciones": ["Valores compartidos", "Falta de dirección", "Poca comunicación", "Desorganización"],
+                    "respuesta": "Valores compartidos"
+                },
+                {
+                    "pregunta": "¿Qué permite la flexibilidad laboral en una empresa?",
+                    "opciones": ["Equilibrar vida y trabajo", "Eliminar responsabilidades", "Aumentar la jornada laboral", "Reducir la productividad"],
+                    "respuesta": "Equilibrar vida y trabajo"
+                },
+                {
+                    "pregunta": "¿Cómo se mide la efectividad de la capacitación en RRHH?",
+                    "opciones": ["Evaluando desempeño y resultados", "Eliminando mediciones", "Reduciendo horas de formación", "Evitando el uso de indicadores"],
+                    "respuesta": "Evaluando desempeño y resultados"
+                },
+                {
+                    "pregunta": "¿Qué busca la gestión del cambio en RRHH?",
+                    "opciones": ["Adaptar la organización a nuevas realidades", "Evitar transformaciones", "Resistir nuevas tendencias", "Reducir la innovación"],
+                    "respuesta": "Adaptar la organización a nuevas realidades"
+                },
+                {
+                    "pregunta": "¿Por qué es importante la alineación de objetivos en RRHH?",
+                    "opciones": ["Para asegurar que todos trabajen en la misma dirección", "Para reducir la comunicación", "Para eliminar planes de desarrollo", "Para evitar la motivación"],
+                    "respuesta": "Para asegurar que todos trabajen en la misma dirección"
+                },
+                {
+                    "pregunta": "¿Cuál es una función clave del departamento de RRHH?",
+                    "opciones": ["Asegurar el bienestar y desarrollo del talento", "Reducir el número de empleados", "Evitar la diversidad", "Eliminar la formación continua"],
+                    "respuesta": "Asegurar el bienestar y desarrollo del talento"
+                }
+            ]
+            
