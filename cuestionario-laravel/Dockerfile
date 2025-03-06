@@ -1,7 +1,7 @@
-# Usamos una imagen de PHP con soporte para PostgreSQL y Composer
-FROM php:8.2-fpm
+# Usamos la imagen oficial de PHP con Apache
+FROM php:8.2-apache
 
-# Instalamos dependencias del sistema necesarias para Laravel y PostgreSQL
+# Instalamos dependencias necesarias
 RUN apt-get update && apt-get install -y \
     libpq-dev zip unzip curl && docker-php-ext-install \
     pdo pdo_pgsql
@@ -24,6 +24,5 @@ RUN composer install --no-dev --optimize-autoloader
 # Damos permisos a los directorios de Laravel
 RUN chmod -R 777 storage bootstrap/cache
 
-# Configuramos el punto de entrada
-ENTRYPOINT ["/bin/sh", "/var/www/html/entrypoint.sh"]
-CMD ["php", "artisan", "serve", "--host=0.0.0.0", "--port=8080"]
+# Configuramos el punto de entrada correctamente
+ENTRYPOINT ["/bin/sh", "-c", "/var/www/html/entrypoint.sh"]
