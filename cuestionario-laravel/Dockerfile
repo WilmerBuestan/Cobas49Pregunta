@@ -1,28 +1,26 @@
 # Usamos la imagen oficial de PHP con Apache
 FROM php:8.2-apache
 
-# Instalamos extensiones de PHP necesarias
+# Instalamos extensiones necesarias
 RUN apt-get update && apt-get install -y \
-    unzip curl git libzip-dev \
-    && docker-php-ext-install zip pdo pdo_mysql
+    libzip-dev unzip curl && docker-php-ext-install zip pdo pdo_pgsql
 
-# Instalamos Composer manualmente
+# Instalamos Composer
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
-# Configuramos el directorio de trabajo en Apache
-WORKDIR /var/www/html
-
 # Copiamos los archivos del proyecto
+WORKDIR /var/www/html
 COPY . .
 
-# Instalamos las dependencias de Laravel
+# Damos permisos de ejecución al entrypoint
+RUN chmod +x /var/www/html/entrypoint.sh
+
+# Instalamos dependencias de Laravel
 RUN composer install --no-dev --optimize-autoloader
 
 # Configuramos permisos adecuados
 RUN chmod -R 777 storage bootstrap/cache
 
-# Exponemos el puerto 8080
-EXPOSE 8080
-
-# Comando de inicio para Laravel
+# Configuramos el punto de entrada
+ENTRYPOINT ["/bin/sh", "/var/www/html/entrypoint.sh"]
 CMD ["php", "artisan", "serve", "--host=0.0.0.0", "--port=8080"]
