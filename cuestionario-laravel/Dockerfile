@@ -15,14 +15,14 @@ WORKDIR /var/www/html
 # Copiamos los archivos del proyecto
 COPY . .
 
-# Damos permisos de ejecución al entrypoint
-RUN chmod +x /var/www/html/entrypoint.sh
-
 # Instalamos dependencias de Laravel
 RUN composer install --no-dev --optimize-autoloader
 
 # Damos permisos a los directorios de Laravel
 RUN chmod -R 777 storage bootstrap/cache
 
-# Configuramos el punto de entrada correctamente
-ENTRYPOINT ["/bin/sh", "-c", "/var/www/html/entrypoint.sh"]
+# EJECUTAR MIGRACIONES EN EL BUILD
+RUN php artisan migrate --force
+
+# Configuramos el punto de entrada
+CMD ["php", "artisan", "serve", "--host=0.0.0.0", "--port=8080"]
