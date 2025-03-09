@@ -1,66 +1,145 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+## **📜 README.md - Cuestionario Interactivo en Laravel 12**
+### **📌 Descripción**
+Este es un **aplicativo web en Laravel 12** que permite:
+- Crear y gestionar **materias**.
+- Cargar archivos **JSON** con preguntas para generar cuestionarios interactivos.
+- Realizar cuestionarios con **retroalimentación visual** de respuestas correctas e incorrectas.
+- Obtener **calificaciones** al finalizar un cuestionario.
 
-## About Laravel
+---
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## **🚀 Instalación y Configuración**
+### **1️⃣ Requisitos Previos**
+Antes de comenzar, asegúrate de tener instalado en tu equipo:
+- **PHP 8.2 o superior**
+- **Composer** ([Descargar aquí](https://getcomposer.org/))
+- **XAMPP** (para MySQL y Apache) ([Descargar aquí](https://www.apachefriends.org/es/index.html))
+- **Git** (opcional, para clonar el repositorio) ([Descargar aquí](https://git-scm.com/))
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+---
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+### **2️⃣ Clonar el Proyecto**
+Si tienes Git instalado, usa este comando para clonar el repositorio:
+```sh
+git clone https://github.com/tu-usuario/tu-repositorio.git
+cd tu-repositorio
+```
+O simplemente **descarga el código en formato ZIP** y extráelo.
 
-## Learning Laravel
+---
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+### **3️⃣ Instalar Dependencias**
+Ejecuta los siguientes comandos en la terminal dentro del proyecto:
+```sh
+composer install
+```
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+---
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+### **4️⃣ Configurar el Entorno**
+1. **Duplicar el archivo `.env.example` y renombrarlo a `.env`**:
+   ```sh
+   cp .env.example .env
+   ```
 
-## Laravel Sponsors
+2. **Configurar la conexión a la base de datos en el `.env`**:
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+   ```ini
+   DB_CONNECTION=mysql
+   DB_HOST=127.0.0.1
+   DB_PORT=3306
+   DB_DATABASE=cuestionario
+   DB_USERNAME=root
+   DB_PASSWORD=
+   ```
 
-### Premium Partners
+   📌 *Si usas otro usuario de MySQL, cambia `DB_USERNAME` y `DB_PASSWORD`*.
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+---
 
-## Contributing
+### **5️⃣ Generar la Clave de Aplicación**
+Laravel necesita una clave de cifrado (`APP_KEY`) para funcionar correctamente.  
+Si al ejecutar el proyecto ves el error **"No application encryption key has been specified"**, solucionalo con:
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+```sh
+php artisan key:generate
+```
+Si el comando se ejecuta correctamente, verás un mensaje como este:
+```
+Application key set successfully.
+```
 
-## Code of Conduct
+Para asegurarnos de que Laravel reconoce la clave, ejecuta:
+```sh
+php artisan config:clear
+php artisan cache:clear
+```
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+Finalmente, abre el archivo **`.env`** y verifica que la línea `APP_KEY` tenga un valor generado:
+```
+APP_KEY=base64:abcdefg123456789hijklmnopqrstuvwxyz=
+```
 
-## Security Vulnerabilities
+---
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+### **6️⃣ Crear la Base de Datos**
+1. **Abre XAMPP** y activa **Apache** y **MySQL**.
+2. **Crea una base de datos** en MySQL llamada `cuestionario`.
+3. **Ejecuta las migraciones** para generar las tablas necesarias:
+   ```sh
+   php artisan migrate --seed
+   ```
 
-## License
+---
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+### **7️⃣ Ejecutar el Servidor**
+Inicia el servidor local de Laravel con:
+```sh
+php artisan serve
+```
+Esto iniciará el proyecto en:
+```
+http://127.0.0.1:8000
+```
+
+---
+
+## **🛠 Funcionalidades**
+✔ **Gestión de Materias**: Crear, editar y eliminar materias.  
+✔ **Carga de Preguntas en JSON**: Subir archivos JSON para generar cuestionarios.  
+✔ **Cuestionarios Interactivos**: Resaltar respuestas correctas y mostrar la calificación final.  
+✔ **Barra de Navegación**: Acceso rápido a la página de inicio y opción de cancelar.  
+
+---
+
+## **📂 Estructura del Proyecto**
+```
+cuestionario-laravel/
+│── app/                   # Lógica del backend (Controladores, Modelos)
+│── database/              # Migraciones y Seeders
+│── public/                # Archivos accesibles públicamente
+│── resources/             # Vistas Blade y archivos CSS/JS
+│── routes/                # Definición de rutas web y API
+│── .env.example           # Archivo de configuración de entorno
+│── composer.json          # Dependencias del proyecto
+│── README.md              # Documentación del proyecto
+```
+
+---
+
+## **📖 Notas Adicionales**
+- Si necesitas **resetear la base de datos**, usa:
+  ```sh
+  php artisan migrate:fresh --seed
+  ```
+- Para ver errores en Laravel, activa el modo **debug** en `.env`:
+  ```ini
+  APP_DEBUG=true
+  ```
+
+---
+
+## **🙌 Créditos**
+📌 Proyecto desarrollado por **Wilmer Buestan**  
+🔗 GitHub:https://github.com/WilmerBuestan/Cobas49Pregunta
